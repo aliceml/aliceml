@@ -1,0 +1,12 @@
+[submodule "seam-support"]
+	path = seam-support
+	url = https://github.com/aliceml/aliceml-seam-support
+[submodule "make"]
+	path = make
+	url = https://github.com/aliceml/aliceml-make
+[submodule "alice/sources"]
+	path = alice/sources
+	url = https://github.com/aliceml/aliceml-alice
+[submodule "seam/sources"]
+	path = seam/sources
+	url = https://github.com/aliceml/aliceml-seam
