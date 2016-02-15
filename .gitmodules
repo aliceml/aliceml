@@ -10,3 +10,6 @@
 [submodule "seam/sources"]
 	path = seam/sources
 	url = https://github.com/aliceml/aliceml-seam
+[submodule "gecode/sources"]
+	path = gecode/sources
+	url = https://github.com/aliceml/gecode
