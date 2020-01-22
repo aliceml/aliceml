@@ -16,11 +16,11 @@ More about Alice ML is available from the original project page: http://www.ps.u
 Building on Linux
 =================
 
-The following packages were required to build on Ubuntu 13.10:
+The following packages were required to build on Ubuntu 19.10:
 
     $ sudo apt-get install smlnj smlnj-runtime ml-lex ml-lpt ml-yacc     
     $ sudo apt-get install g++ libsqlite3-dev libgtk2.0-dev libgmp-dev \
-         gawk libtool libc6-dev-i386 libgnomecanvas2-dev gtk2-engines-pixbuf \
+         gawk libtool libgnomecanvas2-dev gtk2-engines-pixbuf \
          libxml2-dev autoconf texinfo
 
 To build:
