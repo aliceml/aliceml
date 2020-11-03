@@ -65,7 +65,7 @@ On my machine the `make all` fails some time in the build when compiling `Native
 
 The build can be continued with:
 
-    $ PATH=/path/to/aliceml/distro/bin:$PATH make -C ../alice/lib/gtk/seam/
+    $ PATH=/path/to/aliceml/distro/bin:$PATH make -C ../alice/sources/lib/gtk/seam/
     $ make all
 
 The final system will be in the `distro` subdirectory and instructions are printed at the end of `make all` on how to add to the `PATH` and run.
