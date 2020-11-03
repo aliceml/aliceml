@@ -47,7 +47,7 @@ users would be useful.
 
 The following packages were used from [Homebrew](http://brew.sh):
 
-    $ brew install smlnj gmp libgnomecanvas gtk+
+    $ brew install smlnj gmp libgnomecanvas gtk+ gawk
 
 To build:
 
