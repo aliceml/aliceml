@@ -57,15 +57,16 @@ To build:
     $ make setup
     #...add directory displayed to the PATH...
     $ export PATH=/path/displayed/in/setup:$PATH
-    $ make all
+    $ LDFLAGS=-L/usr/local/lib CXXFLAGS=-I/usr/local/include make all >alice.log 2>&1
 
-On my machine the `make all` fails some time in the build when compiling `NativeLibs.cc` with this error:
+The redirect to `alice.log` for the build process is to work around an issue with Mac OS where it fails with the following error due to the volume of output sent to the terminal:
 
     distro/bin/seamtool: line 63: echo: write error: Resource temporarily unavailable
 
-The build can be continued with:
+You can view the build progress with `tail -f alice.log` in another terminal window. If you don't redirect the output and get the above error, then the build can be continued with:
 
-    $ PATH=/path/to/aliceml/distro/bin:$PATH make -C ../alice/sources/lib/gtk/seam/
+    $ PATH=/path/to/aliceml/distro/bin:$PATH LDFLAGS=-L/usr/local/lib \
+        CXXFLAGS=-I/usr/local/include make -C ../alice/sources/lib/gtk/seam/
     $ make all
 
 The final system will be in the `distro` subdirectory and instructions are printed at the end of `make all` on how to add to the `PATH` and run.
